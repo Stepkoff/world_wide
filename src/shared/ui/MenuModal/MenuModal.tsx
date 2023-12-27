@@ -108,7 +108,6 @@ interface MenuModalProps {
   onClose: () => void
   elemRef: React.RefObject<HTMLButtonElement>
 }
-
 export const MenuModal = ({children, isOpened, onClose, elemRef}: MenuModalProps) => {
 
   const { mounted } = useMount({ isOpened });
