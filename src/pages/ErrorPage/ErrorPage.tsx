@@ -1,4 +1,5 @@
 import s from './errorPage.module.sass'
+import {MaxWidthWrapper} from "@/shared/ui/MaxWidthWrapper";
 
 
 
@@ -11,8 +12,10 @@ export const ErrorPage = () => {
 
   return (
     <div className={s.errorPage}>
-      Something went wrong!
-      <button onClick={reloadPage}>Refresh the page</button>
+      <MaxWidthWrapper>
+        Something went wrong!
+        <button onClick={reloadPage}>Refresh the page</button>
+      </MaxWidthWrapper>
     </div>
   );
 };

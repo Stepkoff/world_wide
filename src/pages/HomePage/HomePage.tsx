@@ -1,9 +1,12 @@
 import s from './homePage.module.sass'
+import {MaxWidthWrapper} from "@/shared/ui/MaxWidthWrapper";
 
 export const HomePage = () => {
   return (
     <div className={s.homePage}>
-      <p className={s.kurwa}>hello</p>
+      <MaxWidthWrapper>
+        Home page
+      </MaxWidthWrapper>
     </div>
   )
 }
