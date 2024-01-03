@@ -42,7 +42,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/product' element={<ProductPage/>} />
     <Route path='/pricing' element={<PricingPage/>} />
     <Route path={'/login'} element={<LoginPage/>} />
-    <Route path={'./app'} element={<ProtectedRoute><AppLayoutLazy/></ProtectedRoute>}>
+    <Route path={'/app'} element={<ProtectedRoute><AppLayoutLazy/></ProtectedRoute>}>
       <Route index element={<Navigate replace to="cities" />} />
       <Route path="cities" element={<CityList />} />
       <Route path="cities/:id" element={<City />} />
