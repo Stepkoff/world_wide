@@ -1,7 +1,7 @@
 import s from './notFoundPage.module.sass'
 import {MaxWidthWrapper} from "@/shared/ui/MaxWidthWrapper";
 
-export const NotFoundPage = () => {
+const NotFoundPage = () => {
   return (
     <div className={s.notFoundPage}>
       <MaxWidthWrapper>
@@ -10,3 +10,5 @@ export const NotFoundPage = () => {
     </div>
   )
 }
+
+export default NotFoundPage

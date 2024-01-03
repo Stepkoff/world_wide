@@ -1,12 +1,18 @@
-import { Header } from '@/widgets/Header'
-import { Outlet } from 'react-router-dom'
-import s from './appLayout.module.sass'
+import s from "./AppLayout.module.sass";
+import {Sidebar} from "@/widgets/Sidebar";
+import {User} from "@/entities/User";
 
-export const AppLayout = () => {
+const AppLayout = () => {
   return (
-    <div className={s.appLayout}>
-      <Header/>
-      <Outlet/>
+    <div className={s.app}>
+      appLayout
+      <Sidebar />
+      {/*<Map />*/}
+      <User />
     </div>
-  )
+  );
 }
+
+export default AppLayout
+
+

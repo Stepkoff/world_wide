@@ -1,7 +1,7 @@
 import s from './productPage.module.sass'
 import {MaxWidthWrapper} from "@/shared/ui/MaxWidthWrapper";
 
-export const ProductPage = () => {
+const ProductPage = () => {
   return (
     <div className={s.productPage}>
       <MaxWidthWrapper>
@@ -10,3 +10,5 @@ export const ProductPage = () => {
     </div>
   )
 }
+
+export default ProductPage

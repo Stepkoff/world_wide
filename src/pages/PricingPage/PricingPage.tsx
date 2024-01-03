@@ -1,7 +1,7 @@
 import s from './pricingPage.module.sass'
 import {MaxWidthWrapper} from "@/shared/ui/MaxWidthWrapper";
 
-export const PricingPage = () => {
+const PricingPage = () => {
 
   return (
     <div className={s.pricingPage}>
@@ -11,3 +11,5 @@ export const PricingPage = () => {
     </div>
   )
 }
+
+export default PricingPage

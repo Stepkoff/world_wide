@@ -2,26 +2,27 @@
 @import "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 @import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
 
-html
-  --color-brand--1: #fff
-  --color-brand--2: #fff
+
+\:root
+  --color-brand--1: #ffb545
+  --color-brand--2: #00c46a
 
   --color-dark--0: #242a2e
   --color-dark--1: #2d3439
   --color-dark--2: #42484d
-  --color-light--1: #aaaaaa
+  --color-light--1: #aaa
   --color-light--2: #ececec
   --color-light--3: #d6dee0
-  &.dark
-    --color-brand--1: black
-    --color-brand--2: black
+.dark
+  --color-brand--1: #0e7490
+  --color-brand--2: #f97316
 
-    --color-dark--0: #aaaaaa
-    --color-dark--1: #ececec
-    --color-dark--2: #d6dee0
-    --color-light--1: #242a2e
-    --color-light--2: #2d3439
-    --color-light--3: #42484d
+  --color-dark--0: #aaaaaa
+  --color-dark--1: #ececec
+  --color-dark--2: #d6dee0
+  --color-light--1: #242a2e
+  --color-light--2: #2d3439
+  --color-light--3: #42484d
 
 *
   margin: 0
@@ -41,7 +42,7 @@ body
   font-weight: 400
   line-height: 1.6
   font-size: 1.6rem
-  .modalOpen
+  &.modalOpen
     overflow: hidden
 
 label

@@ -1,9 +1,7 @@
 import s from './errorPage.module.sass'
 import {MaxWidthWrapper} from "@/shared/ui/MaxWidthWrapper";
 
-
-
-export const ErrorPage = () => {
+const ErrorPage = () => {
 
   const reloadPage = () => {
     // eslint-disable-next-line no-restricted-globals
@@ -19,3 +17,5 @@ export const ErrorPage = () => {
     </div>
   );
 };
+
+export default ErrorPage
