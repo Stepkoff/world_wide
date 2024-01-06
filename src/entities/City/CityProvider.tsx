@@ -14,7 +14,7 @@ interface ContextType {
   isLoading: boolean,
   currentCity: CityType | null,
   error: string,
-  getCity: (id: number) => void,
+  getCity: (id: number | string) => void,
   createCity: (city: CityType) => void,
   deleteCity: (id: number) => void,
 }
@@ -109,8 +109,8 @@ const CitiesProvider = ({ children }: PropsWithChildren) => {
     fetchCities();
   }, []);
 
-  const getCity = useCallback(async (id: number) => {
-      if (Number(id) === currentCity.id) return;
+  const getCity = useCallback(async (id: number|string) => {
+      if (Number(id) === currentCity?.id) return;
 
       dispatch({ type: "loading" });
 

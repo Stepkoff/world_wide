@@ -26,7 +26,6 @@ const ProtectedRoute = ({ children }:PropsWithChildren) => {
   const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
-
   useEffect(
     function () {
       if (!isAuthenticated) navigate("/");
